@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-
         <record id="view_stock_move_lots_inh" model="ir.ui.view">
             <field name="name">mrp.production</field>
             <field name="model">mrp.production</field>
@@ -13,6 +12,5 @@
                 </xpath>
             </field>
         </record>
-
     </data>
 </odoo>
