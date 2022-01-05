@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_invoice_document" name="Invoice line quantity"
+            inherit_id="account.report_invoice_document">
+        <xpath expr="//p[@name='note']" position="after">
+            <p t-if="o.fiscal_position_id and o.fiscal_position_id.name == 'EU landen'">This is an intra-Community delivery: 'Article 138(1) of Directive 2006/112</p>
+        </xpath>
+    </template>
+</odoo>
