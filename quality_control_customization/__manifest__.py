@@ -10,7 +10,8 @@
     'name': "Quality control customization",
     'summary': """Quality control customization""",
     'description': """
-            1) Changed Warning Message based on measure success in Quality Check
+            1) Changed Warning Message based on measure success in Quality 
+            Check
     """,
     'author': "Aardug, Arjan Rosman",
     'website': "http://www.aardug.nl/",

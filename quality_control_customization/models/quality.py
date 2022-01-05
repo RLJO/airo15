@@ -6,7 +6,7 @@
 #
 ##############################################################################
 
-from odoo import api, fields, models, _
+from odoo import api, models, _
 
 
 class QualityCheck(models.Model):
@@ -16,7 +16,9 @@ class QualityCheck(models.Model):
     def _compute_warning_message(self):
         for rec in self:
             if rec.measure_success == 'fail':
-                rec.warning_message = _('You measured %.3f %s and it should be between %.3f and %.3f %s.') % (
+                rec.warning_message = (
+                    'You measured %.3f %s and it should be between %.3f\
+                     and %.3f %s.') % (
                     rec.measure, rec.norm_unit, rec.point_id.tolerance_min,
                     rec.point_id.tolerance_max, rec.norm_unit
                 )
