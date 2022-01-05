@@ -7,20 +7,18 @@
 ##############################################################################
 
 {
-    'name': "Quality control customization",
-    'summary': """Quality control customization""",
-    'description': """
+    'name': 'Quality control customization',
+    'summary': '''Quality control customization''',
+    'description': '''
             1) Changed Warning Message based on measure success in Quality Check
-    """,
-    'author': "Aardug, Arjan Rosman",
-    'website': "http://www.aardug.nl/",
+    ''',
+    'author': 'Aardug, Arjan Rosman',
+    'website': 'http://www.aardug.nl/',
     'support': 'arosman@aardug.nl',
     'version': '15.0.0.1',
     'category': 'Account',
     'depends': ['quality_control'],
     'installable': True,
     'application': False,
-    'data': [
-            ],
     'license': 'LGPL-3',
 }
