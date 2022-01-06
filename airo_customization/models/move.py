@@ -6,6 +6,11 @@
 #
 ##############################################################################
 
-from . import mrp
-from . import product
-from . import move
+from odoo import fields, models
+
+
+class StockMove(models.Model):
+    _inherit = 'stock.move'
+
+    xaa_ar_batch_no = fields.Char(string='Batch No')
+    xaa_ar_lot = fields.Char(string='Lot/Serial Number')

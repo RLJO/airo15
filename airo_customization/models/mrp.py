@@ -6,7 +6,7 @@
 #
 ##############################################################################
 
-from odoo import api, fields, models
+from odoo import models
 
 
 class MrpProduction(models.Model):
@@ -28,10 +28,3 @@ class MrpProduction(models.Model):
                         lot_list.append(line.lot_id.name)
                 move.xaa_ar_lot = ','.join(lot_list)
         return res
-
-
-class StockMove(models.Model):
-    _inherit = 'stock.move'
-
-    xaa_ar_batch_no = fields.Char('Batch No')
-    xaa_ar_lot = fields.Char(string='Lot/Serial Number')
