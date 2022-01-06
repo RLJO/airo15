@@ -24,7 +24,5 @@
                   2) Add Lot Number in Stock Move
                   3) State is changed based on confirming Manufacture order
       ''',
-    'installable': True,
-    'application': False,
     'license': 'LGPL-3'
 }
