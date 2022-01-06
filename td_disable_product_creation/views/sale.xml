@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="sale_order_form_disable" model="ir.ui.view">
+        <field name="name">sale.order.product.disable</field>
+        <field name="model">sale.order</field>
+        <field name='inherit_id' ref='sale.view_order_form' />
+        <field name="priority">55</field>
+        <field name='arch' type='xml'>
+            <xpath
+                expr="//field[@name='order_line']//tree//field[@name='product_id']"
+                position="attributes">
+                <attribute name="options">{'no_create': 1, 'no_open': 1}</attribute>
+            </xpath>
+            <xpath
+                expr="//field[@name='order_line']//form//field[@name='product_id']"
+                position="attributes">
+                <attribute name="options">{'no_create': 1, 'no_open': 1}</attribute>
+            </xpath>
+
+        </field>
+    </record>
+
+</odoo>
